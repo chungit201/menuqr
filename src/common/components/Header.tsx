@@ -10,6 +10,7 @@ export const Header: React.FunctionComponent = () => {
     >
       <div className={'container max-w-[1120px] px-3 mx-auto'}>
         <Image
+          aria-label="Trang chủ"
           className={'cursor-pointer !w-auto !h-auto lg:!h-[40px] lg:!w-[140px]'}
           src={require('@/common/assets/images/logo.svg')}
           alt={'Trang chủ'}

@@ -1,8 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import {useTranslation} from "next-i18next";
 
 export const Banner: React.FunctionComponent = () => {
+  const { t } = useTranslation("common");
+
+  console.log('t("title")',t("title"))
+
   return (
     <div className={'banner relative w-full mb-5 lg:mb-[30px] flex flex-col-reverse items-center lg:block'}>
       <div className={'h-[360px] lg:h-[416px] z-[1] flex relative'}>
