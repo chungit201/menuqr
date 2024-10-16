@@ -37,7 +37,7 @@ export const Banner: React.FunctionComponent = () => {
         className={
           'lg:!w-[785px] lg:!h-[416px] !max-w-full !w-full !h-auto object-cover rounded-[16px] lg:absolute lg:top-0 lg:left-[310px] lg:z-0'
         }
-        src={require('@/common/assets/images/BannerMenuQR.jpeg')}
+        src={require('@/common/assets/images/BannerMenuQR.webp')}
         alt={''}
       />
     </div>
