@@ -2,21 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: #171717;
+  background: #ffffff !important;
   font-family:
     Be Vietnam Pro,
     sans-serif !important;
@@ -34,3 +22,17 @@ body {
   white-space: nowrap;
 }
 
+.dropdown-toggle:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+  border-bottom-color: #959595;
+  border-top-color: #959595;
+  vertical-align: middle;
+}

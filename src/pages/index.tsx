@@ -1,10 +1,9 @@
 import { Banner } from '@/common/components/Banner';
+import { Footer } from '@/common/components/Footer';
 import { Header } from '@/common/components/Header';
 import { Store } from '@/common/components/Store';
-import {Footer} from "@/common/components/Footer";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 export default function Home() {
-
   return (
     <>
       <Header />
@@ -12,15 +11,16 @@ export default function Home() {
         <Banner />
         <Store />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
 
-export async function getStaticProps({ locale } : { locale: any }) {
+export async function getStaticProps({ locale }: { locale: any }) {
+  const theLocale = locale as string;
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'footer'])),
+      ...(await serverSideTranslations(theLocale == 'default' ? 'vi' : theLocale, ['common', 'footer'])),
       // Will be passed to the page component as props
     },
   };

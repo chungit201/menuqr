@@ -1,5 +1,10 @@
 {
-  "title": "i18n NextJS project",
-  "spanish": "Spanish",
-  "english": "English"
+  "title": "Food delivery service in Vietnam",
+  "vietnamese": "Vietnamese",
+  "english": "English",
+  "banner-desc": "Order online for super fast delivery or pickup, powered by MenuQR.",
+  "btn-login": "Login to order",
+  "btn-search": "Search nearby",
+  "footer-company": "Rapida Technologies Joint Stock Company",
+  "footer-address": "No. HA02-231, Hai Au 2 Street, Vinhome Ocean Park Urban Area, Kieu Ky Commune, Gia Lam District, Hanoi City"
 }
